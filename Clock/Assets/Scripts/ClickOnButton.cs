@@ -7,6 +7,9 @@ public class ClickOnButton : MonoBehaviour
     public AudioClip hitSound;
     public Database database;
     public GameObject arrow;
+    public GameObject howerarrow;
+    public GameObject minutearrow;
+    public GameObject midle;
     public int index;
 
     void Awake()
@@ -19,6 +22,21 @@ public class ClickOnButton : MonoBehaviour
         if (!arrow)
         {
             arrow = GameObject.Find("SecondArrow");
+        }
+
+        if (!howerarrow)
+        {
+            howerarrow = GameObject.Find("HowerArrow");
+        }
+
+        if (!minutearrow)
+        {
+            minutearrow = GameObject.Find("MinutArrow");
+        }
+
+        if (!midle)
+        {
+            midle = GameObject.Find("Second");
         }
     }
 
@@ -42,5 +60,8 @@ public class ClickOnButton : MonoBehaviour
         {
             index--;
         }
+        
+        howerarrow.transform.RotateAround(midle.transform.position, Vector3.back, 450 * Time.deltaTime);
+        minutearrow.transform.RotateAround(midle.transform.position, Vector3.back, 300 * Time.deltaTime);
     }
 }
