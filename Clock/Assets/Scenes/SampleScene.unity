@@ -786,7 +786,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 480144125}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 99ababb7f101f974b88ed48be8b7f5e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 689094fe8f8e5374cbac6485c573db4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   hitSound: {fileID: 8300000, guid: d0d39ddfd39ff884b823da155ed4ba45, type: 3}
