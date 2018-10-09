@@ -64,5 +64,71 @@ public class ClickOnButton : MonoBehaviour
 
         howerarrow.transform.RotateAround(midle.transform.position, Vector3.back, 450 * Time.deltaTime);
         minutearrow.transform.RotateAround(midle.transform.position, Vector3.back, 300 * Time.deltaTime);
+
+        string TextOnClock;
+        TextOnClock = GameObject.Find("DayText").GetComponent<TextMesh>().text;
+
+        if (TextOnClock == "Tue")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Вт";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Tue";
+        }
+
+        if (TextOnClock == "Mon")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Пн";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Mon";
+        }
+
+        if (TextOnClock == "Wn")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Ср";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Wn";
+        }
+
+        if (TextOnClock == "Thu")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Чт";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Thu";
+        }
+
+        if (TextOnClock == "Fr")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Пт";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Fr";
+        }
+
+        if (TextOnClock == "Sat")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Ср";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Sat";
+        }
+
+        if (TextOnClock == "Sun")
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Вс";
+        }
+        else
+        {
+            GameObject.Find("DayText").GetComponent<TextMesh>().text = "Sun";
+        }
     }
 }
